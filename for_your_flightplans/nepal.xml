@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <version type="int">2</version>
+  <flight-rules type="string">V</flight-rules>
+  <flight-type type="string">X</flight-type>
+  <estimated-duration-minutes type="int">0</estimated-duration-minutes>
+  <departure>
+    <airport type="string">VNLD</airport>
+    <runway type="string">07</runway>
+  </departure>
+  <destination>
+    <airport type="string">VNSB</airport>
+    <runway type="string">30</runway>
+  </destination>
+  <route>
+    <wp>
+      <type type="string">runway</type>
+      <departure type="bool">true</departure>
+      <ident type="string">07</ident>
+      <icao type="string">VNLD</icao>
+    </wp>
+    <wp n="1">
+      <type type="string">basic</type>
+      <ident type="string">WP01</ident>
+      <lon type="double">86.668816</lon>
+      <lat type="double">27.297655</lat>
+    </wp>
+    <wp n="2">
+      <type type="string">basic</type>
+      <ident type="string">WP02</ident>
+      <lon type="double">86.684608</lon>
+      <lat type="double">27.310163</lat>
+    </wp>
+    <wp n="3">
+      <type type="string">basic</type>
+      <ident type="string">WP03</ident>
+      <lon type="double">86.683578</lon>
+      <lat type="double">27.416271</lat>
+    </wp>
+    <wp n="4">
+      <type type="string">basic</type>
+      <ident type="string">WP04</ident>
+      <lon type="double">86.723404</lon>
+      <lat type="double">27.452229</lat>
+    </wp>
+    <wp n="5">
+      <type type="string">basic</type>
+      <ident type="string">WP05</ident>
+      <lon type="double">86.724091</lon>
+      <lat type="double">27.475382</lat>
+    </wp>
+    <wp n="6">
+      <type type="string">basic</type>
+      <ident type="string">WP06</ident>
+      <lon type="double">86.691132</lon>
+      <lat type="double">27.493656</lat>
+    </wp>
+    <wp n="7">
+      <type type="string">basic</type>
+      <ident type="string">WP07</ident>
+      <lon type="double">86.713791</lon>
+      <lat type="double">27.544806</lat>
+    </wp>
+    <wp n="8">
+      <type type="string">basic</type>
+      <ident type="string">WP08</ident>
+      <lon type="double">86.675705</lon>
+      <lat type="double">27.568195</lat>
+    </wp>
+    <wp n="9">
+      <type type="string">basic</type>
+      <ident type="string">WP09</ident>
+      <lon type="double">86.715363</lon>
+      <lat type="double">27.678663</lat>
+    </wp>
+    <wp n="10">
+      <type type="string">navaid</type>
+      <ident type="string">VNLK</ident>
+      <lon type="double">86.72729628</lon>
+      <lat type="double">27.68660495</lat>
+    </wp>
+    <wp n="11">
+      <type type="string">navaid</type>
+      <ident type="string">WU01</ident>
+      <lon type="double">86.71139997</lon>
+      <lat type="double">27.73570008</lat>
+    </wp>
+    <wp n="12">
+      <type type="string">navaid</type>
+      <ident type="string">WU02</ident>
+      <lon type="double">86.6992547</lon>
+      <lat type="double">27.779819</lat>
+    </wp>
+    <wp n="13">
+      <type type="string">navaid</type>
+      <ident type="string">WU03</ident>
+      <lon type="double">86.6479329</lon>
+      <lat type="double">27.8286941</lat>
+    </wp>
+    <wp n="14">
+      <type type="string">basic</type>
+      <ident type="string">WP10</ident>
+      <lon type="double">86.630623</lon>
+      <lat type="double">27.917141</lat>
+    </wp>
+    <wp n="15">
+      <type type="string">basic</type>
+      <ident type="string">WP11</ident>
+      <lon type="double">86.657341</lon>
+      <lat type="double">27.948349</lat>
+    </wp>
+    <wp n="16">
+      <type type="string">navaid</type>
+      <ident type="string">WU04</ident>
+      <lon type="double">86.69310031</lon>
+      <lat type="double">27.9547</lat>
+    </wp>
+    <wp n="17">
+      <type type="string">basic</type>
+      <ident type="string">WP12</ident>
+      <lon type="double">86.727776</lon>
+      <lat type="double">27.972345</lat>
+    </wp>
+    <wp n="18">
+      <type type="string">basic</type>
+      <ident type="string">WP13</ident>
+      <lon type="double">86.765747</lon>
+      <lat type="double">27.985411</lat>
+    </wp>
+    <wp n="19">
+      <type type="string">navaid</type>
+      <ident type="string">WU05</ident>
+      <lon type="double">86.827427</lon>
+      <lat type="double">27.979208</lat>
+    </wp>
+    <wp n="20">
+      <type type="string">navaid</type>
+      <ident type="string">WU06</ident>
+      <lon type="double">86.8711266</lon>
+      <lat type="double">27.904898</lat>
+    </wp>
+    <wp n="21">
+      <type type="string">navaid</type>
+      <ident type="string">WU07</ident>
+      <lon type="double">86.82674</lon>
+      <lat type="double">27.88853</lat>
+    </wp>
+    <wp n="22">
+      <type type="string">navaid</type>
+      <ident type="string">WU08</ident>
+      <lon type="double">86.8194</lon>
+      <lat type="double">27.894145</lat>
+    </wp>
+    <wp n="23">
+      <type type="string">basic</type>
+      <ident type="string">WP14</ident>
+      <lon type="double">86.816551</lon>
+      <lat type="double">27.879295</lat>
+    </wp>
+    <wp n="24">
+      <type type="string">navaid</type>
+      <ident type="string">WU09</ident>
+      <lon type="double">86.7657249</lon>
+      <lat type="double">27.8354973</lat>
+    </wp>
+    <wp n="25">
+      <type type="string">basic</type>
+      <ident type="string">WP15</ident>
+      <lon type="double">86.745132</lon>
+      <lat type="double">27.829967</lat>
+    </wp>
+    <wp n="26">
+      <type type="string">basic</type>
+      <ident type="string">WP16</ident>
+      <lon type="double">86.725403</lon>
+      <lat type="double">27.800058</lat>
+    </wp>
+    <wp n="27">
+      <type type="string">navaid</type>
+      <ident type="string">VNS1</ident>
+      <lon type="double">86.7146563</lon>
+      <lat type="double">27.8040484</lat>
+    </wp>
+    <wp n="28">
+      <type type="string">runway</type>
+      <approach type="bool">true</approach>
+      <ident type="string">30</ident>
+      <icao type="string">VNSB</icao>
+    </wp>
+  </route>
+</PropertyList>
