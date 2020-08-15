@@ -2,7 +2,7 @@
 
 <PropertyList>
 <particlesystem>
-		<name>steam</name>
+		<name>smokeFire</name>
 		<texture>smoke.png</texture>
 		<emissive>false</emissive>
 		<lighting>false</lighting>
@@ -20,23 +20,23 @@
 				<spread>0.1</spread>
 			</speed-mps>
 			<rotation-speed>
-				<x-max-deg-sec>15</x-max-deg-sec>
-				<x-min-deg-sec>-15</x-min-deg-sec>
-				<y-max-deg-sec>15</y-max-deg-sec>
-				<y-min-deg-sec>-15</y-min-deg-sec>
-				<z-max-deg-sec>15</z-max-deg-sec>
-				<z-min-deg-sec>-15</z-min-deg-sec>
+				<x-max-deg-sec>30</x-max-deg-sec>
+				<x-min-deg-sec>-30</x-min-deg-sec>
+				<y-max-deg-sec>30</y-max-deg-sec>
+				<y-min-deg-sec>-30</y-min-deg-sec>
+				<z-max-deg-sec>30</z-max-deg-sec>
+				<z-min-deg-sec>-30</z-min-deg-sec>
 			</rotation-speed>
 		</shooter>
 
-<counter><particles-per-sec><value>8</value><spread>4</spread></particles-per-sec></counter>
+<counter><particles-per-sec><value>7</value><spread>3</spread></particles-per-sec></counter>
 
 <align>billboard</align>
 
 <particle>
-  <start><color><red><value>0.95</value></red><green><value>0.60</value></green><blue><value>0.60</value></blue><alpha><value>0.05</value></alpha></color><size><value>0.4</value></size></start>
-  <end>  <color><red><value>1.00</value></red><green><value>1.00</value></green><blue><value>1.00</value></blue><alpha><value>0.50</value></alpha></color><size><value>2.4</value></size></end>
-  <life-sec><value>3.0</value></life-sec>
+  <start><color><red><value>0.47</value></red><green><value>0.30</value></green><blue><value>0.30</value></blue><alpha><value>0.25</value></alpha></color><size><value>0.4</value></size></start>
+  <end>  <color><red><value>0.10</value></red><green><value>0.10</value></green><blue><value>0.10</value></blue><alpha><value>0.75</value></alpha></color><size><value>4.0</value></size></end>
+  <life-sec><value>4.0</value></life-sec>
   <mass-kg>0.0005</mass-kg>
   <radius-m>0.10</radius-m>
 </particle>
