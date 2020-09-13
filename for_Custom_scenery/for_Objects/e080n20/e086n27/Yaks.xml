@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <path>Yaks.ac</path>
+  <!-- set speed and radius of circuit -->
+  <!-- 20 deg per sec  CW -->
+  <!-- -90 / reverse for RH circuit ??  -->
+  <!-- 20m  radius  -->
+  <animation>                                   
+    <type>rotate</type>
+    <object-name>frame</object-name>
+    <property>/sim/time/elapsed-sec</property>
+    <factor>-20.0</factor> 
+    <offset-deg>90</offset-deg>
+    <center><x-m>0</x-m><y-m>-20</y-m><z-m>0</z-m></center>
+    <axis>      <x>0</x>    <y>0</y>    <z>1</z></axis>
+  </animation>
+
+  
+  <!-- make it climb and descend as it goes round --> 
+  <!-- = 0.5 * (0.5 + sin(hdg) ) metres, ie: 0 .. 1m -->
+  <!-- value same as rotate factor, eg 10 deg / sec  ACW 
+  <animation>                          
+    <type>translate</type>
+    <object-name>frame</object-name>
+     <expression>
+       <product>
+         <value>0.5</value>
+         <sum>
+         <value>0.5</value>
+          <sin>
+            <deg2rad>
+                <product>
+                  <value>-10</value>
+                  <property>/sim/time/elapsed-sec</property>
+                </product>
+            </deg2rad>
+          </sin>
+        </sum>
+      </product>
+     </expression>	
+    <axis>      <x>0</x>    <y>0</y>    <z>1</z></axis>
+  </animation>-->
+    
+  
+ <animation>
+  <type>textranslate</type>
+  <object-name>frame</object-name>
+<property>/sim/time/elapsed-sec</property>
+  <bias>0.04</bias>
+  <factor>-1</factor>
+  <step>0.06250</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+
+  </axis>
+ </animation>
+ 
+
+</PropertyList>
