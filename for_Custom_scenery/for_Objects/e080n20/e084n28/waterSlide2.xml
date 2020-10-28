@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<PropertyList>
+    <path>waterSlide2.ac</path>
+
+<animation><type>textranslate</type>                 <object-name>poolSlide</object-name>
+  <property>/sim/time/elapsed-sec</property>
+  <bias>0.04</bias>
+  <factor>0.08</factor>
+  <step>.1</step>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+  </axis>
+</animation>
+<animation><type>rotate</type>                      <object-name>poolSurface</object-name>
+  <property>/sim/time/elapsed-sec</property>
+  <factor>-3</factor>
+  <center><x-m>-12</x-m><y-m>0</y-m><z-m>0</z-m>
+  </center>
+  <axis><x>0</x><y>0</y><z>1</z>
+  </axis>
+ </animation>
+<!-- ================================================================================= -->
+ <particlesystem>                                                       <name>mist</name>
+		<texture>smoke.png</texture>
+		<emissive>false</emissive>
+		<lighting>false</lighting>
+		<offsets><x-m>-10</x-m><y-m>0</y-m><z-m>-5</z-m></offsets>
+		<attach>world</attach>
+		<placer><type>point</type></placer>
+		<shooter>
+			<theta-min-deg>85</theta-min-deg>
+			<theta-max-deg>95</theta-max-deg>
+			<phi-min-deg>-5</phi-min-deg>
+			<phi-max-deg>5</phi-max-deg>
+			<speed-mps><value>1.0</value><spread>0.25</spread></speed-mps>
+			<rotation-speed>
+				<x-max-deg-sec>45</x-max-deg-sec>
+				<x-min-deg-sec>-45</x-min-deg-sec>
+				<y-max-deg-sec>45</y-max-deg-sec>
+				<y-min-deg-sec>-45</y-min-deg-sec>
+				<z-max-deg-sec>45</z-max-deg-sec>
+				<z-min-deg-sec>-45</z-min-deg-sec>
+			</rotation-speed>
+		</shooter>
+
+<counter><particles-per-sec><value>16</value><spread>5</spread></particles-per-sec></counter>
+
+<align>billboard</align>
+<particle>
+  <start><color><red><value>0.95</value></red><green><value>0.95</value></green><blue><value>0.95</value></blue><alpha><value>0.05</value></alpha></color><size><value>3.0</value></size></start>
+  <end>  <color><red><value>1.00</value></red><green><value>1.00</value></green><blue><value>1.00</value></blue><alpha><value>0.50</value></alpha></color><size><value>6.0</value></size></end>
+  <life-sec><value>1.0</value></life-sec>
+  <mass-kg>0.0025</mass-kg>
+  <radius-m>0.1</radius-m>
+</particle>
+<program><fluid>air</fluid><gravity>true</gravity><wind>true</wind></program>
+
+</particlesystem>
+<!-- ================================================================================= -->
+ <particlesystem>                                                   <name>waterfall</name>
+   <texture>angel_falls.png</texture>
+   <emissive>true</emissive>
+   <lighting>true</lighting>
+ 
+   <offsets><x-m>10.0</x-m><y-m>0.0</y-m><z-m>4.5</z-m></offsets>
+   <attach>world</attach>
+ 
+   <placer><type>point</type></placer>
+ 
+   <shooter>
+     <theta-min-deg>90.0</theta-min-deg>
+     <theta-max-deg>90.0</theta-max-deg>
+     <phi-min-deg>175.0</phi-min-deg>
+     <phi-max-deg>185</phi-max-deg>
+     <speed-mps>
+       <value>32.0</value>
+       <spread>4</spread>
+     </speed-mps>
+     <rotation-speed>
+       <x-min-deg-sec>-30</x-min-deg-sec>
+       <y-min-deg-sec>30</y-min-deg-sec>
+       <z-min-deg-sec>-30</z-min-deg-sec>
+       <x-max-deg-sec>30</x-max-deg-sec>
+       <y-max-deg-sec>-30</y-max-deg-sec>
+       <z-max-deg-sec>30</z-max-deg-sec>
+     </rotation-speed>
+   </shooter>
+     
+   <counter><particles-per-sec><value>10</value><spread>5</spread></particles-per-sec></counter>
+   <align>billboard</align>
+      
+   <particle>
+     <start>
+       <color>
+         <red><value>0.8</value></red><green><value>0.8</value></green><blue><value>0.8</value></blue>
+         <alpha><value>0.3</value></alpha>
+       </color>
+       <size><value>1.5</value></size>
+     </start>
+ 
+     <end>
+       <color>
+         <red><value>0.5</value></red><green><value>0.5</value></green><blue><value>0.6</value></blue>
+         <alpha><value>0.5</value></alpha>
+       </color>
+       <size><value>6.0</value></size>
+     </end>
+ 
+     <life-sec><value>5</value></life-sec>
+     <mass-kg>0.1</mass-kg>
+     <radius-m>0.25</radius-m>
+   </particle>
+ 
+   <program>
+     <fluid>air</fluid>
+     <gravity type="bool">true</gravity>
+     <wind type="bool">false</wind>
+   </program>
+</particlesystem>
+
+</PropertyList>
